@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["es2020"],
+    "moduleResolution": "Node",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "target": "es2022",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@api": ["projects/api/src"],
+      "@api/*": ["projects/api/src/*"],
+      "@shared": ["projects/shared"],
+      "@shared/*": ["projects/shared/*"],
+      "@worker": ["projects/worker/src"],
+      "@worker/*": ["projects/worker/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "scripts"]
+}

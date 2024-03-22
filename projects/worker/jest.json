@@ -1,0 +1,16 @@
+{
+  "testEnvironment": "node",
+  "coverageDirectory": "coverage-unit",
+  "verbose": true,
+  "testRegex": ".test.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": [
+      "@swc/jest"
+    ]
+  },
+  "moduleNameMapper": {
+    "@shared/(.*)": "<rootDir>/../shared/$1",
+    "@api/(.*)": "<rootDir>/../api/src/$1",
+    "@worker/(.*)": "<rootDir>/../worker/src/$1"
+  }
+}

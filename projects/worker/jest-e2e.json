@@ -1,0 +1,20 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "coverageDirectory": "coverage-e2e",
+  "testEnvironment": "node",
+  "testRegex": ".e2e.spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": [
+      "@swc/jest"
+    ]
+  },
+  "moduleNameMapper": {
+    "@shared/(.*)": "<rootDir>/../shared/$1",
+    "@worker/(.*)": "<rootDir>/../worker/src/$1",
+    "@api/(.*)": "<rootDir>/../api/src/$1"
+  }
+}

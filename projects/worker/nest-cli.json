@@ -1,0 +1,12 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "entryFile": "worker/src/main",
+  "compilerOptions": {
+    "assets": [{
+      "include": "./**/*.proto",
+      "outDir": "./dist/worker/src"
+    }]
+  }
+
+}
